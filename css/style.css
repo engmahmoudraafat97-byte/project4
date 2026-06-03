@@ -1,0 +1,666 @@
+*{ 
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Exo", sans-serif;
+   
+}
+@font-face{
+    font-family: "Exo";
+    src: url("/fonts/Exo-Regular.ttf");
+    font-weight: 400;
+}
+@font-face{
+    font-family: "Exo";
+    src: url("../fonts/Exo-Medium.ttf");
+    font-weight: 500;
+}
+@font-face{
+    font-family: "Exo";
+    src: url("/fonts/Exo-SemiBold.ttf");
+    font-weight: 600;
+}
+@font-face{
+    font-family: "Exo";
+    src: url("../fonts/Exo-Bold.ttf");
+    font-weight: 700;
+}
+@font-face{
+    font-family: "Exo";
+    src: url("../fonts/Exo-Black.ttf");
+    font-weight: 900;
+}
+.Container{
+    margin: auto;
+    width: 100%;
+    
+    max-width: 1248px;
+        display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 28px;
+}
+
+
+
+/* start navbar */
+.navbar{
+
+   width: 100%;
+   position: fixed;
+
+     z-index: 1000;
+    
+    padding: 10px 0px;
+}
+.ContainerNavbar{
+    margin: auto;
+    padding: 12px 16px;
+    background-color: white;
+    border-radius: 20px;
+    border: 2px solid black;
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.brandName h2{
+    white-space: nowrap;
+    
+    color: black;
+    font-size: 30px;
+     line-height: 36px;
+    font-weight: 800;
+   
+}
+.brandName span{
+    color: #f97316;
+    display: inline;
+}
+.navbarList{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbarList ul{
+    
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 20px;
+    display: none;
+}
+.navbarList li{
+     text-decoration: none;
+     font-size: 14px;
+        font-weight: 600;
+        line-height: 20px;
+        vertical-align: baseline;
+
+}
+.navbarBtn button{
+    padding: 8px 16px;
+    background-color: RGB(255, 209, 91);
+    color: black;
+    font-size:14px ;
+    line-height: 20px;
+    font-weight: 700;
+    border-radius: 9999px;
+    border: 2px solid black;    
+    cursor: pointer;
+    display: none;
+}
+
+/* start cover section */
+.cover{
+    width: 100%;
+   min-height: 810px;
+    border: 2px solid black;
+    background-color: #FFF085;
+  
+}
+.coverContent{
+    width: 100%;
+    margin-top: 100px;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    justify-content: space-between;
+}
+
+.coverContentLeft{
+    width: 100%;
+    display: inline-block;
+    padding: 20px 0;
+    
+  
+}
+.coverContentLeftHeading{
+       text-align: left;
+    margin-bottom: 24px;
+}
+.coverContentLeft .coverContentLeftHeading h3{
+    font-size: 14px;
+    line-height: 36px;
+    font-weight: 700;
+    display: inline-block;
+     padding: 8px 16px;
+    background-color:black;
+    color: white;
+    box-shadow: 2px 2px 0 black;
+    transform: rotate(-2deg);
+}
+.coverContentLeft h2{
+    font-size: 54px;
+    line-height: 1.1;
+    font-weight: 900;
+    text-align: left;
+    text-shadow: 2px 2px 0 #000c;
+    margin-bottom: 32px;
+}
+.head2{
+ color: red;
+}
+.head3{
+color: blue;
+}
+.coverContentLeftBtn{
+    display: flex;
+      column-gap: 16px ;  
+}
+.coverContentLeftBtn button{
+ padding: 16px 32px ;
+  cursor: pointer;
+      border: 4px solid black;
+    font-size: 20px;
+    font-weight: 700;
+    box-shadow: 6px 6px 0 black;
+ 
+    /* transition: all 0.2s ease; */
+}
+
+/* .coverContentLeftBtn button:hover{
+    transform: translate(6px, 6px);
+     box-shadow: 0px 0px 0 black;
+} */
+.coverContentLeft p{
+    background-color: white;
+    border: 2px solid black;
+    box-shadow: 4px 4px 0 black;
+    padding: 16px ;
+    font-size: 21px;
+    line-height: 32px;
+    font-weight: 400;
+    text-align: left;
+    margin-bottom: 32px;
+
+
+}
+
+
+
+.coverContentRight{
+    width: 100%;
+    display: inline-block;
+   display: flex;
+   align-items: center; 
+       position: relative;
+
+}
+
+.coverContentRight img{
+    width: 100%;
+    
+        border: 4px solid black;
+         height: 376px;
+         object-fit: cover;
+    display: block;
+    
+    box-shadow: 6px 6px black;
+        
+
+}
+
+
+
+.coverContentRightStiker{
+    position: absolute;
+    top: -20px;
+    right: -16px;
+     transform: rotate(12deg);
+    color: white;
+    background-color: red;
+    padding: 8px 16px ;
+    font-size: 16px;
+    font-weight: 700;
+    border: 2px solid black;
+}
+
+
+/* end cover section */
+
+/* start section 1 mobile first  */
+.section1{
+   padding: 80px 0;
+   border: 2px solid black;
+   
+}
+.section1Left{
+ width: 810px;
+}
+.section1LeftHead{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 48px;
+    
+}
+.section1LeftHead h3{
+ font-size: 48px;
+ display: inline-block;
+ font-weight: 900;
+}
+.section1LeftHeadStiker{
+    /* display: inline-block; */
+    background-color: black;
+    padding: 8px 16px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+    height: fit-content;
+    box-shadow:4px 4px black ;
+    transform: rotate(2deg);
+    display: none;
+}
+
+/* card left in section 1 */
+.section1LeftCard{
+   
+   padding: 32px;
+   border: 4px solid black;
+   box-shadow: 4px 4px black;
+   margin-bottom: 28px;
+}
+.section1LeftCardImg{
+   
+   width: 180px;
+   margin-bottom: 10px;
+   position: relative;
+}
+.section1LeftCardImg img{
+   width: 156px;
+   height: 100px;
+   border: 2px solid black;
+}
+.imgSticker{
+   padding: 4px 8px;
+   border: 2px solid black;
+   background-color: red;
+   color: white;
+   font-size: 12px;
+   font-weight: 600 ;
+   display: inline-block;
+   position: absolute;
+   left: 115px;
+   top: -5px;
+   transform: rotate(10deg);
+}
+.section1LeftCardContent .contentStiker{
+ display: inline-block;
+ background-color: #FFDF20 ;
+box-shadow: 2px 2px black;
+border: 2px solid black;
+font-size: 12px;
+padding: 4px 12px;
+font-weight: 700;
+transform: rotate(-2deg);
+margin-bottom: 12px;
+}
+.section1LeftCardContent h4{
+font-size: 24px;
+margin-bottom: 12px;
+font-weight: 700;
+}
+.section1LeftCardContent p{
+font-size: 18px;
+font-weight: 400;
+margin-bottom: 16px;
+}
+
+.section1LeftCardContentFooter ul{
+   
+    padding: 0;
+   list-style: none;
+   display: grid;
+   grid-template-columns: 1fr  ;
+   grid-template-rows: auto auto auto auto;
+   
+       
+
+   
+
+}
+.section1LeftCardContentFooter li{
+    color: black;
+    font-weight: 400;
+  
+}
+/* end card left section 1  */
+.section1LeftBtn{
+  
+    text-align: center;
+}
+.section1LeftBtn button{
+    
+    font-size: 17px;
+    padding: 14px 42px ;
+    background-color: black;
+    color: white;
+     font-weight: 700;
+     box-shadow: 4px 4px black;
+     margin-bottom: 20px;
+
+}
+
+/* section 1  right  tow cad */
+.section1Right{
+
+    width: 100%;
+}
+
+/* upper card  */
+.section1RightUpCard{
+    width: 100%;
+    
+padding: 28px;
+margin-bottom: 28px;
+ border: 4px solid black;
+ box-shadow: 4px 4px black;
+
+}
+.section1RightUpCard h4{
+    font-size: 26px;
+    font-weight: 900;
+    margin-bottom: 21px;
+
+}
+
+.li{
+   display: flex;
+   margin-bottom: 21px;
+   
+}
+.liNum{
+  margin-right: 14px;
+  font-size: 30px;
+  font-weight: 900;
+}
+.liContent h5{
+   font-size: 16px;
+}
+.liContent p{
+    font-size: 12px;
+}
+.liDown{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+.liDownContent{
+    padding: 10px 14px;
+    border: 2px solid black;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* start section 2 */
+.section2{
+    padding: 80px 0;
+    background-color: #FFD230;
+}
+
+.section2Head{
+    width: 100%;
+    text-align: center;
+     margin-bottom: 64px;
+     h3{
+        font-size: 48px;
+        font-weight: 900;}
+        p{
+            font-size: 20px;
+            font-weight: 600;
+        }
+   
+}
+.Underline{
+    width: 110px;
+    height: 8px;
+    background-color: black;
+    
+    margin: 16px auto 0 auto;
+}
+
+/* Card section 2 */
+.section2Card{
+    width: 100%;
+    
+    
+   
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows: auto auto auto;
+    gap: 32px;
+}
+.section2CardForm{
+    padding: 28px;
+    background-color: #FEF9C2;
+    border: 4px solid black;
+    box-shadow: 6px 6px black;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    justify-content: center;
+    align-items: center;
+}
+.section2CardFormImg{
+
+    width:100px;
+    object-fit: cover;
+    border: 4px solid black;
+}
+.section2CardFormImg img{
+    width: 100%;
+    height: 100%;
+}
+.section2CardFormContent{
+    text-align: center;
+   
+}
+
+ .section2CardFormContent h4{
+        font-size: 26px;    
+        font-weight: 700;
+        margin-bottom: 7px;
+    }
+    .section2CardFormContent p:first-of-type{
+        font-size: 14px;
+        font-weight: 700;
+        margin-bottom: 14px;
+        color: gray;
+    }
+    .section2CardFormContent p:last-of-type{
+        font-size: 14px;
+        font-weight: 400;
+        margin-bottom: 21px;
+    }
+    .section2CardFormContentFooter ul{
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 14px;
+    }
+    .section2CardFormContentFooter li{
+        padding: 4px 12px;
+        BACKGROUND-COLOR: black;
+       
+        border: 2px solid black;
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+/* end section 2 */
+/* start section 3 JOIN THE REBELLION   */
+.section3{
+    padding: 80px 0;
+
+}
+.section3Head{
+    width: 100%;
+   text-align: center;
+   margin-bottom: 64px;
+    
+}
+.section3Head h2{
+    margin-bottom: 14px;
+    font-size: 42px;
+    font-weight: 800;
+}
+.section3Content{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows: auto;
+   gap: 32px;
+}
+.section3ContentLeft{
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+}
+.section3ContentLeft h4{
+    font-size: 36px;
+    font-weight: 900;
+    margin-bottom: 32px;
+    margin-top: 14px;
+
+}
+.section3ContentLeft span{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 32px;
+    padding: 16px;
+    border: 2px solid black;
+     box-shadow: 4px 4px black;
+
+}
+.section3ContentLeftLi{
+    
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+     gap: 14px;   
+     MARGIN-BOTTOM: 24px;
+
+      p{
+        font-size: 18px;
+        font-weight: 600;
+       
+     } 
+    
+    
+}
+.section3ContentLeftLiIcon {
+        text-align: center;
+        padding: 15px;
+        border: 2px solid black;
+        background-color: #FFDF20;
+        font-size: 16px;
+    }
+.section3ContentLeftBtn button{
+    padding: 24px 48px;
+    background-color: black;
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+    border: 2px solid black;
+    box-shadow: 4px 4px black;
+}
+
+/* section 3 Content Right */
+.section3ContentRight{
+    padding: 40px ;
+    border: 4px solid black;
+    box-shadow: 4px 4px black;
+    h5{
+    font-size: 30px;
+    font-weight: 900;
+    margin-bottom: 32px;
+    }
+}
+.section3ContentRightCard{
+    padding: 16px 16px 16px 24px ;
+    background-color: #FEF9C2;
+    text-align: left;
+    border: 2px solid black;
+    margin-bottom: 32px;
+    
+}
+.section3ContentRightCardContent{
+    text-align: left;
+    p{
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 16px;
+    }
+}
+.section3ContentRightCardFooter{
+    display: flex;
+    justify-content: start;
+    
+    gap: 14px;
+    margin-top: 21px;
+}
+.section3ContentRightCardFooterImg{
+    width: 60px;
+    height: 60px;
+    border: 2px solid black;
+}
+.section3ContentRightCardFooterImg img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.section3ContentRightCardFooterContent{
+    width: 100%;
+    DISPLAY: flex;
+     flex-direction: column;
+     align-items: flex-start;
+    justify-content: center;
+}
+.section3ContentRightCardFooterContent p:first-of-type{
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+.section3ContentRightCardFooterContent p:last-of-type{
+    font-size: 14px;
+    font-weight: 400;
+    color: gray ;
+        margin: 0;
+   
+}
+
+
+/* end section 3  */

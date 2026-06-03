@@ -1,0 +1,95 @@
+
+
+
+/* sm */
+@media (min-width: 576px) {
+   
+ }
+
+/* md */
+@media (min-width: 768px) { 
+
+}
+
+/* lg */
+@media (min-width: 992px) { 
+
+.ContainerNavbar{
+    width: 1200px;
+}
+.navbarList ul{
+    display: flex;
+}
+.navbarBtn button{
+    display: block;
+}
+    .coverContent{
+        flex-direction: row;
+        align-items: center;
+    }
+    .coverContentLeft{
+        width: 550px;
+    }
+    .coverContentRight{
+        width: 550px;
+    }
+
+
+
+    .section1{
+        display: flex;
+        align-items: flex-start;
+        gap: 32px;
+    }
+    .section1Left{
+        width: 750px;
+
+    }
+    .section1LeftCard{
+        display: flex;
+    }
+    .section1LeftCardContent{
+        padding-left: 20px ;
+    }
+    .section1LeftCardContentFooter ul{
+       
+        grid-template-columns: repeat(4, max-content);
+       
+        grid-template-rows: auto;
+        justify-content: space-between;
+    }
+
+    .section1Right{
+        width: 400px;
+        position: sticky;
+        top: 120px;
+        align-self: flex-start;
+        background-color: transparent;
+    }
+    .section2Card{
+    width: 100%;
+    
+    
+   
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto ;
+   
+        gap: 32px;
+}
+.section3Head h2{
+    margin-bottom: 16px;
+    font-size: 48;
+    font-weight: 900;
+}
+}
+
+/* xl */
+@media (min-width: 1200px) { 
+
+}
+
+/* xxl */
+@media (min-width: 1400px) { 
+    
+}
